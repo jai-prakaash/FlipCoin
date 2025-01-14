@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>exercise</title>
+</head>
+<body>
+    <STYle>
+        BODY{
+            background-color: #12a6d3;
+            font-family: Arial, sans-serif;
+        }
+
+    </STYle>
+ 
+<div class=" flex flex-col w-max  ml-auto mr-auto mt-5 ">
+
+ <button 
+
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded items-center justify-center  "
+ 
+ onclick=" flipCoin();" >Flip Coin</button>
+
+
+
+
+</div>
+<div class=" flex flex-col w-max  ml-auto mr-auto  mt-5" >
+    <h1 class=" bg-inherit font-bold text-gray-950  stroke-black font-serif result items-center justify-center content-start " > </h1>
+
+</div>
+
+
+
+
+
+  <a href="BET FLIP.HTML"> for bet version </a>
+
+
+
+    <script>
+ 
+
+   function flipCoin() {
+
+    const nom =  Math.random();
+    console.log(nom);
+    console.log(Math.round(nom));
+
+   let result='';
+    if (Math.round(nom) === 0){result = 'Heads'; } else {
+            result= 'Tails';
+        }
+
+    document.querySelector('.result').innerText = result; 
+    console.log(result);
+};
+
+    </script>
+    
+</body>
+</html>

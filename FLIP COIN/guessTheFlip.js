@@ -20,14 +20,22 @@ function result(player) {
 
   if (player === flip) {
     resultmessage = `
-            computer chose ${flip} you chose ${player} 
-            You win `;
+            <p class="text-lg text-green-500 font-semibold">Computer chose <span class="font-bold">${flip}</span>. You chose <span class="font-bold">${player}</span>.</p>
+
+      <p class="text-green-500 text-xl">You win!</p>`;
   } else {
-    resultmessage = `computer chose ${flip} you chose ${player} You lose`;
+    resultmessage = ` <p class="text-lg text-red-500 font-semibold">Computer chose <span class="font-bold">${flip}</span>. You chose <span class="font-bold">${player}</span>.</p>
+      <p class="text-red-500 text-xl">You lose.</p>`;
   }
-  document.querySelector(".result").innerText = resultmessage;
+  document.querySelector(".result").innerHTML = resultmessage;
 
   console.log(flipCoin());
 
   console.log(resultmessage);
+}
+
+
+
+function reset(){
+    document.querySelector(".result").innerText = "";
 }

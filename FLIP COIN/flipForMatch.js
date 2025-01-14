@@ -13,3 +13,8 @@ function flipCoin() {
   document.querySelector(".result").innerText = result;
   console.log(result);
 }
+
+
+function reset(){
+    document.querySelector(".result").innerText = "";
+}

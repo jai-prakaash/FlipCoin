@@ -15,7 +15,7 @@
         <li>Clone the repository:
             <pre><code>git clone https://github.com/jai-prakaash/FlipCoin/</code></pre>
         </li>
-        <li>Open <code>BET_FLIP.HTML</code> in a browser to play the game.</li>
+        <li>Open <code>[https://jai-prakaash.github.io/FlipCoin/]</code> in a browser to play the game.</li>
     </ol>
     <h2>Contributing</h2>
     <p>Fork the repository, submit pull requests, or open issues for bugs and features.</p>
